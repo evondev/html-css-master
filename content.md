@@ -6,7 +6,7 @@
 - Tìm hiểu các tổ hợp phím cơ bản trong VSCode
 - Tìm hiểu các thiết lập chính của vscode cho người mới
 - Extensions là gì ?
-- Cài đặt các extensions cần thiết cho khóa học: Auto Rename Tag, Color Highlight, HTML CSS Support, CSS Peek, Hightlight Matching Tag, HTML to CSS autocompletion, Live Preview, Prettier
+- Cài đặt các extensions cần thiết cho khóa học: Auto Rename Tag, Color Highlight, HTML CSS Support, CSS Peek, Hightlight Matching Tag, HTML to CSS autocompletion, Live Preview, Prettier, Live Server
 - Những lưu ý khi đặt tên thư mục cần nắm: html-css-master, khoa-hoc-evondev-master
 - Cách đưa thư mục vào VSCode
 - Cài đặt Chrome extensions cần thiết
@@ -29,9 +29,9 @@
 - Cấu trúc(structure) HTML cơ bản của 1 trang web
 - Thẻ(tag) là gì ? 2 loại thẻ cơ bản cần nắm
 - Thuộc tính(attribute) của thẻ để làm gì ?
-- Tư duy gom nhóm giao diện
 - Hiểu về gia phả trong HTML
 - Hiểu rõ cách hoạt động của CSS cơ bản
+- Tư duy gom nhóm giao diện
 - Thực hành và phân tích vào thiết kế thực tế
 
 # Bổ sung
