@@ -14,5 +14,31 @@
 - _h2_: Dùng được nhiều, thường được dùng cho những block to
 - _h3_: Dùng được nhiều, thường được dùng cho những block nhỏ
 - h4,h5,h6: Tương ứng cho những tiêu đề nhỏ hơn
-- _Thẻ a_: Là thẻ inline, chắc chắn là dùng cho liên kết, nó có 3 thuộc tính hay dùng `href`, `target`, và `rel`
+- _a_: Là thẻ inline, chắc chắn là dùng cho liên kết, nó có 3 thuộc tính hay dùng `href`, `target`, và `rel`
 - Khi dùng `target` có giá trị là `_blank` thì thẻ a nên thêm thuộc tính `rel="noopener noreferrer"`
+- Fonts chữ:
+- 1. Sẽ có sẵn ở Google Fonts
+- 2. Không có ở Google Fonts mà được mua, tải trên mạng về máy
+- _font-weight_: Độ đậm nhạt của chữ, 100 -> 900, normal, bold, bolder, extra bold, light, thin, regular, medium, semibold
+- _font-family_: Thiết lập font chữ, truyền vào là font name(tên của font chữ)
+- `sans-serif`: Chữ không có chân
+- `serif`: Chữ có chân
+- _CSS Selectors_: tag, class, id, attribute
+- Tags: h1, h2, h3, div, body, span, a
+- Class: .name, .tour, .tour-header
+- Id: #header, #content
+- Attribute: Later `*`
+- Special selector: \* chọn toàn bộ selectors
+- Cấu trúc 1 đoạn code CSS
+  cssSelectors, cssSelectors, cssSelectors{
+  property: value;
+  }
+  h1,.name,#header,input[type='email']{
+  font-family: 'Inter'
+  }
+- _User Agent Stylesheet_: CSS mặc định của trình duyệt, mỗi trình duyệt sẽ có CSS mặc định khác nhau
+- _CSS reset_: Dùng để reset CSS mặc định của các trình duyệt
+- _box-sizing_: margin, padding, border, width, height, đơn vị px
+- _color_:
+- _background-color_:
+-
