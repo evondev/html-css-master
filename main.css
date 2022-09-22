@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.tour {
+  width: 370px;
+  height: 420px;
+  background-color: white;
+}
+.tour-content {
+  padding: 20px 20px 14px 20px;
+}

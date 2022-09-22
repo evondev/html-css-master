@@ -37,8 +37,17 @@
   font-family: 'Inter'
   }
 - _User Agent Stylesheet_: CSS mặc định của trình duyệt, mỗi trình duyệt sẽ có CSS mặc định khác nhau
-- _CSS reset_: Dùng để reset CSS mặc định của các trình duyệt
-- _box-sizing_: margin, padding, border, width, height, đơn vị px
-- _color_:
-- _background-color_:
--
+- _CSS reset_: Dùng để reset CSS mặc định của các trình duyệt, và 'bắt buộc' phải có đầu tiên
+- _color_: Màu chữ
+- _background-color_: Màu nền
+- _Mã màu_: hexa(#ffa400), orange, rgb(0,0,0), rgba(0,0,0,0.5)
+- _Alpha_(opacity): 0 -> 1
+- **box-sizing**
+- _content-box_: Độ rộng lúc này của 1 khối sẽ bằng width + padding(left+right) + border(left+right)
+- _border-box_: Độ rộng lúc này của 1 khối sẽ bao gồm padding và border, nên áp dụng cho toàn bộ selector(\*)
+- _width_: Độ rộng
+- _height_: Chiều cao
+- _border_: Viền
+- _shorthand_: Viết rút gọn
+- _padding_
+- _margin_
