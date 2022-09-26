@@ -48,6 +48,18 @@
 - _width_: Độ rộng
 - _height_: Chiều cao
 - _border_: Viền
-- _shorthand_: Viết rút gọn
+- _shorthand_: (CSS shorthand) Viết rút gọn
 - _padding_
 - _margin_
+- _text-decoration_: Gạch dưới của thẻ a, `none`, `underline`, `overline`,` line-through`
+- _border-radius_: Độ bo góc của khối, càng lớn thì càng bo góc, nếu hình vuông mà có bo góc lớn thì sẽ tạo ra hình tròn, còn nếu là hình chữ nhật có bo góc lớn thì sẽ tạo ra hình elip
+- border-top-left-radius, border-top-right-radius, border-bottom-left-radius, border-bottom-right-radius
+- _line-height_: Khoảng cách giữa các dòng chữ
+- Khi những thẻ inline nằm cạnh nhau thì nó sẽ nằm trên 1 hàng, ngược lại những thẻ block thì nó sẽ tạo ra hàng mới
+- _display_: block, inline, inline-block, none, flex, grid
+- `block` : Biến thành thẻ block
+- `inline` : Biến thành thẻ inline, nó sẽ bị hạn chế vài thuộc tính CSS liên quan tới box-sizing như là padding-top, padding-bottom, margin-top, margin-bottom
+- `inline-block` : Biến thành thẻ inline-block,
+  là sự kết hợp giữa inline và block, khi các thẻ có thuộc tính inline-block nó sẽ kế thừa đặc tính của inline tức là nằm cạnh nhau thì sẽ nằm trên 1 hàng, có độ rộng bằng nội dung mà nó chứa, không bị hạn chế CSS
+- `none`: Ẩn luôn, ko thấy ko nhấn được
+- `flex`: Dùng rất nhiều hiện nay, nếu master được nó thì code layout vô tư :D

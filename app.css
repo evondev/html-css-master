@@ -10,7 +10,8 @@ body {
 }
 .tour {
   width: 370px;
-  height: 420px;
+  height: auto;
+  /* height: 420px; */
   /* padding: 500px; */
   /* height: 500px;
   width: 450px; */
@@ -37,4 +38,31 @@ body {
   padding-right: 20px;
   padding-bottom: 14px;
   padding-left: 20px;
+}
+.tour-title {
+  margin-bottom: 10px;
+  color: #23262f;
+  font-weight: 500;
+  padding-bottom: 10px;
+  font-size: 18px;
+  /* line-height: 28px; */
+  line-height: 1.556;
+}
+.tour-rating {
+  margin-bottom: 20px;
+}
+.tour-duration,
+.tour-review-count {
+  color: #353945;
+}
+.tour-button {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  padding: 8px 17px;
+  background-color: #3b71fe;
+  text-decoration: none;
+  border-radius: 8px;
+  line-height: 17px;
+  display: inline-block;
 }
