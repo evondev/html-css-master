@@ -49,8 +49,8 @@
 - _height_: Chiều cao
 - _border_: Viền
 - _shorthand_: (CSS shorthand) Viết rút gọn
-- _padding_
-- _margin_
+- _padding_: Không thể dùng số âm
+- _margin_: Có thể dùng số âm, có giá trị `auto`
 - _text-decoration_: Gạch dưới của thẻ a, `none`, `underline`, `overline`,` line-through`
 - _border-radius_: Độ bo góc của khối, càng lớn thì càng bo góc, nếu hình vuông mà có bo góc lớn thì sẽ tạo ra hình tròn, còn nếu là hình chữ nhật có bo góc lớn thì sẽ tạo ra hình elip
 - border-top-left-radius, border-top-right-radius, border-bottom-left-radius, border-bottom-right-radius
@@ -63,3 +63,9 @@
   là sự kết hợp giữa inline và block, khi các thẻ có thuộc tính inline-block nó sẽ kế thừa đặc tính của inline tức là nằm cạnh nhau thì sẽ nằm trên 1 hàng, có độ rộng bằng nội dung mà nó chứa, không bị hạn chế CSS
 - `none`: Ẩn luôn, ko thấy ko nhấn được
 - `flex`: Dùng rất nhiều hiện nay, nếu master được nó thì code layout vô tư :D
+- _min-width_: Độ rộng tối thiểu, ví dụ 100px -> >= 100px
+- _max-width_: Độ rộng tối đa, ví dụ 100px -> <= 100px
+- _flexbox_: Áp dụng thuộc tính display: flex vào phần tử mình muốn dàn layout
+- _calc_: Hàm dùng để tính toán, + - \* /, lưu ý là phải có khoảng cách giữa các phép tính
+- _component_: Mục đích là tái sử dụng và có thể tùy chỉnh 1 chỗ để sử dụng nhiều nơi
+- _pug_:

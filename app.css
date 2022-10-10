@@ -66,3 +66,8 @@ body {
   line-height: 17px;
   display: inline-block;
 }
+.text {
+  min-width: 100px;
+  max-width: 200px;
+  display: inline-block;
+}
