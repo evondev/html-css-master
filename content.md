@@ -33,6 +33,9 @@
 - Hiểu rõ cách hoạt động của CSS cơ bản
 - Tư duy gom nhóm giao diện
 - Thực hành và phân tích vào thiết kế thực tế
+- Cùng học JS cơ bản
+- Master Sass
+- Master Pug
 
 # Bổ sung
 

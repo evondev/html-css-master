@@ -1,0 +1,49 @@
+mixin tourItem
+  .tour
+    .tour-top
+      img.tour-image(src='./images/img1.png', alt='bali')
+      span.tour-price From $40
+    .tour-content
+      h3.tour-title Thailands Ayutthaya Temples Cruise from Bangkok1 Thailands Ayutthaya Temples Cruise from Bangkok1 Thailands Ayutthaya Temples Cruise from Bangkok1
+      .tour-rating
+        .tour-review
+          .tour-star
+            img(src='./images/star.png', alt='tour-rating')
+          .tour-review-count
+            span 4.8 (12 reviews)
+        span.tour-duration Duration: 9 hours
+      a.tour-button(href='https://evondev.com', target='_blank', rel='noopener noreferrer') Tours Price $61
+
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title HTML CSS Master
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="./main.css")
+  body
+    .tour-list-container
+      .tour-list
+        +tourItem
+        +tourItem
+        +tourItem
+        +tourItem
+        +tourItem
+          .tour-top
+            img.tour-image(src='./images/img1.png', alt='bali')
+            span.tour-price From $40
+          .tour-content
+            h3.tour-title Thailands Ayutthaya Temples Cruise from Bangkok1 Thailands Ayutthaya Temples Cruise from Bangkok1 Thailands Ayutthaya Temples Cruise from Bangkok1
+            .tour-rating
+              .tour-review
+                .tour-star
+                  img(src='./images/star.png', alt='tour-rating')
+                .tour-review-count
+                  span 4.8 (12 reviews)
+              span.tour-duration Duration: 9 hours
+            a.tour-button(href='https://evondev.com', target='_blank', rel='noopener noreferrer') Tours Price $61
