@@ -71,7 +71,8 @@
 - _row-gap_: Khoảng trống chiều ngang
 - _component_: Mục đích là tái sử dụng và có thể tùy chỉnh 1 chỗ để sử dụng nhiều nơi
 - _pug_: https://pugjs.org/api/getting-started.html
-- mixins:
-- _sass_:
+- mixins: Giống function trong Javascript mục đích là tái sử dụng code
+- Biến: =, #{biến}
 - _javascript_:
 - _position_:
+- _sass_:

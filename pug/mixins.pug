@@ -1,0 +1,16 @@
+mixin tourItem(image, price, title, review, reviewCount, duration, tourPrice)
+  .tour
+    .tour-top
+      img.tour-image(src= image, alt='bali')
+      span.tour-price= price
+    .tour-content
+      h3.tour-title= title
+      .tour-rating
+        .tour-review
+          .tour-star
+            img(src='./images/star.png', alt='tour-rating')
+          .tour-review-count
+            span= review
+              |  (#{reviewCount} reviews)
+        span.tour-duration Duration: #{duration}
+      a.tour-button(href='https://evondev.com', target='_blank', rel='noopener noreferrer') Tours Price $#{tourPrice}
