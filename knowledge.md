@@ -73,6 +73,6 @@
 - _pug_: https://pugjs.org/api/getting-started.html
 - mixins: Giống function trong Javascript mục đích là tái sử dụng code
 - Biến: =, #{biến}
-- _javascript_:
-- _position_:
-- _sass_:
+- _position_: có 5 giá trị chính: static, relative, absolute, sticky, fixed, khi sử dụng thuộc tính position này thì đi kèm sẽ có các thuộc tính khác như top right bottom left z-index
+- _relative_: Khi sử dụng giá trị này thì phải lưu ý xem phần tử con của nó có sử dụng position là `absolute` hay không ?
+- _absolute_: Khi sử dụng giá trị này thì phải lưu ý xem phần tử chứa nó gần nhất có sử dụng position là absolute hay relative không ?

@@ -86,4 +86,21 @@ body {
   width: 100%;
   height: 239px;
   object-fit: cover;
+  display: block;
+}
+.tour-top {
+  position: relative;
+}
+.tour-price {
+  position: absolute;
+  top: 24px;
+  left: 30px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fcfcfd;
+  background-color: rgb(53, 57, 69, 0.8);
+  padding: 5px 16px;
+  line-height: 20px;
+  border-radius: 4px;
 }
