@@ -76,3 +76,8 @@
 - _position_: có 5 giá trị chính: static, relative, absolute, sticky, fixed, khi sử dụng thuộc tính position này thì đi kèm sẽ có các thuộc tính khác như top right bottom left z-index
 - _relative_: Khi sử dụng giá trị này thì phải lưu ý xem phần tử con của nó có sử dụng position là `absolute` hay không ?
 - _absolute_: Khi sử dụng giá trị này thì phải lưu ý xem phần tử chứa nó gần nhất có sử dụng position là absolute hay relative không ?
+- _responsive_:
+- _breakpoints_: 320px 480px 768px 1024px 1200 1366 1440 1600 1920
+- _min-width_: breakpoints
+- _max-width_: breakpoints - 0.2px
+- _media queries_
