@@ -43,15 +43,20 @@ body {
 .popular-label {
   position: absolute;
   right: 20px;
-  bottom: -11.5px;
+  bottom: 0;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   color: #f4f5f6;
   background-color: #3b71fe;
   border-radius: 30px;
   padding: 8px 18px;
+  transform: translateX(20px) translateY(50%);
+  transform: translate(20px, 50%);
+  transform: translate(0, 50%);
 }
 .popular-content {
   padding: 11px 20px;
@@ -101,4 +106,15 @@ body {
 
   position: absolute;
   inset: 0; */
+}
+@media screen and (max-width: 1023.98px) {
+  .popular-item {
+    width: calc(50% - 30px);
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .popular-item {
+    width: 100%;
+  }
 }

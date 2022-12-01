@@ -81,3 +81,7 @@
 - _min-width_: breakpoints
 - _max-width_: breakpoints - 0.2px
 - _media queries_
+- _transform_: translate(translateX(value), translateY(value)), skew(skewX, skewY), rotate(rotateX,Y,Z), scale(X, Y)
+- `translateX`: Nếu giá trị là số dương thì nó sẽ di chuyển qua bên phải, ngược lại thì di chuyển qua bên trái
+- `translateY`: Nếu giá trị là số dương thì nó đi xuống, ngược lại nó sẽ đi lên
+- `value`: 10px, 20px, -15px, -30px, 10%, lưu ý khi sử dụng % thì % ở đây chính là độ rộng hoặc chiều cao của khối chúng ta đang áp dụng thuộc tính transform và hàm translate
