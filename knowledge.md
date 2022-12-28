@@ -79,5 +79,7 @@
 - _responsive_:
 - _breakpoints_: 320px 480px 768px 1024px 1200 1366 1440 1600 1920
 - _min-width_: breakpoints
-- _max-width_: breakpoints - 0.2px
+- _max-width_: breakpoints - 0.02px
 - _media queries_
+- _variables_: Biến là gì ? Khai báo như thế nào ? Cách sử dụng ra sao ? Ưu và nhược điểm của nó là gì ?
+- _grid_: Dàn layout cực nhanh
