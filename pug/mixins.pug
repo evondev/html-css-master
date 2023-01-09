@@ -14,3 +14,15 @@ mixin tourItem(image, price, title, review, reviewCount, duration, tourPrice)
               |  (#{reviewCount} reviews)
         span.tour-duration Duration: #{duration}
       a.tour-button(href='https://evondev.com', target='_blank', rel='noopener noreferrer') Tours Price $#{tourPrice}
+
+mixin popularItem()
+  .popular-item
+    .popular-image
+      img.popular-img(src="https://source.unsplash.com/random", alt="")
+      span.popular-label Must see
+    .popular-content
+      time.popular-time Sep 28 10:00 AM - 1:00 PM
+      h3.popular-title The Grand Palace
+      .popular-review
+        img(src="./images/star.png", alt="star")
+        span 4.8 (12 reviews)
