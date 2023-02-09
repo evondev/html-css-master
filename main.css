@@ -80,20 +80,14 @@ body {
   justify-content: center;
   background-color: var(--primary-color);
   color: white;
-  padding: 9px 40px;
   border-radius: 100rem;
   cursor: pointer;
   outline: none;
   text-decoration: none;
   font-weight: 500;
-  font-size: 24px;
-  line-height: calc(36 / 24);
   width: fit-content;
-  margin: 70px auto;
 }
-section {
-  margin-bottom: 70px;
-}
+
 .top-tours {
   margin-bottom: 70px;
 }
@@ -327,6 +321,12 @@ section {
   object-fit: cover;
   border-radius: inherit;
 }
+.diamond-all {
+  margin: 70px auto 0;
+  font-size: 24px;
+  padding: 9px 40px;
+  line-height: 1.5;
+}
 .diamond-image {
   position: relative;
   width: 100%;
@@ -364,9 +364,7 @@ section {
   justify-content: space-between;
   gap: 20px;
 }
-.footer-column:first-child {
-  max-width: 268px;
-}
+
 .footer-heading {
   font-size: 24px;
   line-height: 1.5;
@@ -404,6 +402,7 @@ section {
   justify-content: space-between;
   align-items: center;
   color: var(--gray4);
+  gap: 20px;
 }
 .footer-sn-list {
   display: flex;
@@ -450,6 +449,12 @@ section {
 /* @media screen and (max-width: breakpoints - 0.02px) */
 /* @media screen and (max-width: 1023.98px){} */
 /* @media screen and (min-width: breakpoints) and (max-width: breapoints){} */
+@media screen and (min-width: 768px) {
+  .footer-column:first-child {
+    max-width: 268px;
+  }
+}
+
 @media screen and (max-width: 767.98px) {
   /*  */
   /* .tour-list {
@@ -458,6 +463,9 @@ section {
   .tour {
     width: 100%;
   } */
+  .gem-list {
+    grid-template-rows: 100px 100px 70px;
+  }
   .popular-list {
     --columns: 1;
   }
@@ -482,6 +490,38 @@ section {
   }
   .tour-image {
     height: 211px;
+  }
+  .diamond {
+    padding: 30px 0;
+  }
+  .diamond-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-flow: row;
+    grid-auto-rows: 148px;
+    gap: 16px;
+  }
+  .diamond-item {
+    padding: 8px;
+  }
+  .diamond-all {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 16px;
+    padding: 4px 20px;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+  .footer-top {
+    padding-bottom: 30px;
+  }
+  .footer-bottom,
+  .footer-columns {
+    flex-direction: column;
+  }
+  .footer-columns {
+    gap: 40px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023.98px) {
