@@ -98,3 +98,22 @@
 - _semantic tags_: header, footer, main, section, article, nav, aside
 - _list-style-type_: thuộc tính này dùng cho thẻ ul(`disc`) và ol(`decimal`)
 - _list-style-position_: outside hoặc inside
+- _form_: dùng để làm các form(biểu mẫu) nhập thông tin để làm việc gì đó ví dụ như đăng ký tài khoản, đăng nhập, gửi email, điền thông tin cá nhân...
+- _input_: có thuộc tính(attribute), và nó là thẻ tự đóng
+- `type` có nhiều loại tùy thuộc vào mục đích chúng ta sử dụng: text, email, number, phone, time, date, file, password, checkbox, radio, submit...
+- `placeholder` 1 lớp chữ giả mờ để nói cho chúng ta biết input đó làm gì, `name` dùng để truy xuất dữ liệu
+- `required` bắt buộc,
+- `disabled` không cho phép nhập vào, và khi submit form nó cũng ko lấy được dữ liệu,
+- `readonly` chỉ đọc, không sửa được tuy nhiên khi submit form thì vẫn lấy được dữ liệu
+- `min` thường dùng cho number, tức là số nhỏ nhất
+- `max` tương tự ở dòng trên nhưng là số lớn nhất
+- `min-length` tối thiểu kí tự
+- `max-length` tối đa kí tự
+- button
+- `type`: button, submit, reset
+- `inputmode`: _search_ _tel_ _number_ _decimal_ _email_ _url_
+- `autocomplete`: tự động điền, _on_ _off_
+- Trạng thái của input có `focus` `valid` `invalid` `out-of-range`...
+- Button có `hover`, `focus` `active` `disabled`
+- select: thường sẽ được tùy biến lại bằng cách dùng ul li
+- textarea

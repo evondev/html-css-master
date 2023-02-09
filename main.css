@@ -15,6 +15,18 @@ ul,
 ol {
   list-style-type: none;
 }
+input,
+button,
+textarea,
+select {
+  outline: none;
+  font: inherit;
+  background-color: transparent;
+  border: none;
+}
+button {
+  cursor: pointer;
+}
 /* Variables
 Khai báo:
 --primary-color: orange;
@@ -30,6 +42,8 @@ var(--font-size-sm)
   --black-color: #141416;
   --gray2: #353945;
   --gray3: #777e90;
+  --gray4: #b1b5c3;
+  --gray5: #e6e8ec;
   --gray4f: #4f4f4f;
   --gray6: #f4f5f6;
 
@@ -379,6 +393,55 @@ section {
   line-height: 1.5;
   color: var(--gray2);
   margin-bottom: 30px;
+}
+.footer-top {
+  padding-bottom: 70px;
+  border-bottom: 1px solid var(--gray5);
+}
+.footer-bottom {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--gray4);
+}
+.footer-sn-list {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+/* Subscribe */
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 100rem;
+  border: 2px solid var(--gray5);
+  padding: 8px;
+}
+.subscribe-email {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--black-color);
+  font-weight: 500;
+  padding-inline: 18px;
+  width: 100%;
+}
+.subscribe-email::-webkit-input-placeholder {
+  color: var(--gray4);
+}
+.subscribe-email::-moz-input-placeholder {
+  color: var(--gray4);
+}
+.subscribe-button {
+  width: 33px;
+  height: 33px;
+  border-radius: 100rem;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 /* @media screen and (min-width: breakpoints)
 @media screen and (min-width: 320px){}
