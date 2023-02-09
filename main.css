@@ -7,6 +7,14 @@ img {
   display: block;
   max-width: 100%;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol {
+  list-style-type: none;
+}
 /* Variables
 Khai báo:
 --primary-color: orange;
@@ -27,18 +35,23 @@ var(--font-size-sm)
 
   --primary-font: "Inter", sans-serif;
   --secondary-font: "DM Sans", sans-serif;
+
+  --fz-default: 14px;
 }
 body {
   font-family: var(--primary-font);
-  font-weight: 500;
-  background-color: #f5f5f5;
-  padding: 40px 24px;
+  font-weight: 400;
+  background-color: white;
+  font-size: var(--fz-default);
+  color: var(--gray3);
+  line-height: 1;
 }
 
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .heading {
   color: var(--black-color);
@@ -46,6 +59,23 @@ body {
   font-size: 30px;
   margin-bottom: 34px;
   line-height: 1.5;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 9px 40px;
+  border-radius: 100rem;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(36 / 24);
+  width: fit-content;
+  margin: 70px auto;
 }
 section {
   margin-bottom: 70px;
@@ -256,6 +286,10 @@ section {
   grid-column: 2 / -1;
 }
 /* diamond */
+.diamond {
+  padding: 65px 0;
+  background-color: #fcfcfc;
+}
 .diamond .heading {
   text-align: center;
 }
@@ -302,6 +336,49 @@ section {
   color: white;
   display: flex;
   align-items: flex-end;
+}
+/* Footer */
+.footer {
+  padding: 70px 0;
+}
+.footer-container {
+  max-width: 1130px;
+}
+.footer-columns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-column:first-child {
+  max-width: 268px;
+}
+.footer-heading {
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--gray2);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer-link {
+  display: block;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.footer-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gray2);
+  margin-bottom: 30px;
 }
 /* @media screen and (min-width: breakpoints)
 @media screen and (min-width: 320px){}

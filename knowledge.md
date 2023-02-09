@@ -88,3 +88,13 @@
 - _object-fit_: Thuộc tính này dùng cho thẻ img hoặc video, mục đích là để hiển thị hình ảnh hoặc video vừa với khung chứa nó hay không?
 - _object-position_: Dùng để căn chỉnh vị trí hiển thị của img hoặc video khi dùng với thuộc tính `object-fit`
 - _css selectors child_: :nth-child(number), :nth-last-child(number), :first-child, :last-child, những phần tử cùng cấp, .gem-item:first-child, .gem-item:last-child, .gem-item:nth-child(5), :not(selectors), .gem-item:not(:first-child), .gem-item:not(:nth-child(5))
+  pug index.pug --pretty --watch
+- _width: fit-content_: có độ rộng bằng với nội dung nó chứa
+- _margin-inline_: tương ứng margin-left và margin-right
+- _padding-inline_: tương ứng padding-left và padding-right
+- _margin-block_: tương ứng margin-left và margin-right
+- _padding-block_: tương ứng padding-top và padding-bottom
+- _caniuse_: là 1 trang web giúp chúng ta kiểm tra những thuộc tính trong css xem nó có được nhiều trình duyệt hỗ trợ hay không ? Từ đó chúng ta có thể chắc chắn sử dụng vào trong dự án
+- _semantic tags_: header, footer, main, section, article, nav, aside
+- _list-style-type_: thuộc tính này dùng cho thẻ ul(`disc`) và ol(`decimal`)
+- _list-style-position_: outside hoặc inside
