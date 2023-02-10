@@ -1,90 +1,13 @@
-include ./pug/mixins
+extends ./views/layout/layout-tour.pug
+block vars
+  - var title = 'Homepage';
+append head
+  link(rel="stylesheet" href="./css/main.css")
 
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title HTML CSS Master
-    link(rel="preconnect" href="https://fonts.googleapis.com")
-    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-    link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet")
-    link(href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet")
-    link(rel="stylesheet" href="./main.css")
-  body
-    header
-    main
-      section.top-tours
-        .container
-          h2.heading Top Bangkok Tours
-          .tour-list
-            +tourItem("https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=683&q=80", "From $40", "Thailands Ayutthaya Temples Cruise from Bangkok", 4.8, 20, "9 hours", 55)
-            +tourItem("https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", "From $60","FLoating Markets Day Trip from Bangkok", 4.5, 30, "15 hours", 88)
-            +tourItem("https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", "From $60","FLoating Markets Day Trip from Bangkok", 4.5, 30, "15 hours", 88)
-      section.popular
-        .container
-          h2.heading Popular things to do in Bangkok
-          .popular-list
-            +popularItem()
-            +popularItem()
-            +popularItem()
-            +popularItem()
-            +popularItem()
-            +popularItem()
-            +popularItem()
-      section.gem
-        .container
-          h2.heading Hidden gems in Bangkok
-          .gem-list
-            each val in ["https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1421&q=80", "https://images.unsplash.com/photo-1488085061387-422e29b40080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80", "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"]
-              .gem-item
-                img(src= val, alt="")
-      section.diamond
-        .container
-          h2.heading Hidden gems in Bangkok
-          .diamond-list
-            each val in ["https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1421&q=80", "https://images.unsplash.com/photo-1488085061387-422e29b40080?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80"]
-              .diamond-item
-                .diamond-image
-                  img(src= val, alt="")
-                  .diamond-content
-                    h3.diamond-title Bangkok
-          a.button.diamond-all(href="#") Explore All
-    footer.footer
-      .container.footer-container
-        .footer-top
-          .footer-columns
-            .footer-column
-              a.footer-logo(href="/")
-                img(srcSet="./images/logo.png 2x" alt="Airtrav")
-              p.footer-desc Similarly, a loan taken out to buy a car may be secured by the car. The duration of the loan.
-              form.subscribe(action="" autocomplete)
-                input(type="email" placeholder="Enter your email").subscribe-email
-                button.subscribe-button(type="submit")
-                  img(srcSet="./images/icon-arrow-right.png 2x", alt="icon-arrow-right")
-            .footer-column
-              h4.footer-heading Services
-              ul.footer-links
-                each val in ["Trip Planner","Tour Planning","Tour Guide","Tour Package","Tour advice"]
-                  li.footer-item
-                    a.footer-link(href="#")= val
-            .footer-column
-              h4.footer-heading Services
-              ul.footer-links
-                each val in ["Trip Planner","Tour Planning","Tour Guide","Tour Package","Tour advice"]
-                  li.footer-item
-                    a.footer-link(href="#")= val
-            .footer-column
-              h4.footer-heading Services
-              ul.footer-links
-                each val in ["Trip Planner","Tour Planning","Tour Guide","Tour Package","Tour advice"]
-                  li.footer-item
-                    a.footer-link(href="#")= val
-        .footer-bottom
-          p.footer-copyright Copyright© 2023 UIHUT LLC. All rights reserved
-          .footer-sn-list
-            each s in [1,2,3,4]
-              .footer-sn-item
-                a.footer-sn-link(href="#")
-                  img(src="./images/icon-fb.svg")
+block main
+  main
+    include ./views/home/TopTours
+    include ./views/home/Popular
+    include ./views/home/Gem
+    include ./views/home/Diamond
+
