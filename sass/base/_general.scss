@@ -1,0 +1,18 @@
+body {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  background-color: white;
+  font-size: var(--fz-default);
+  color: var(--gray3);
+  line-height: 1;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

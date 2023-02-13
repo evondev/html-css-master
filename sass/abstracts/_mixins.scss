@@ -1,0 +1,16 @@
+// @mixin mixin-name($parameter, ....){property: $parameter}
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin circle() {
+  border-radius: 100rem;
+}
+@mixin square($size, $radius: 0) {
+  width: $size;
+  height: $size;
+
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}

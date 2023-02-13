@@ -115,25 +115,6 @@
 - `autocomplete`: tự động điền, _on_ _off_
 - Trạng thái của input có `focus` `valid` `invalid` `out-of-range`...
 - Button có `hover`, `focus` `active` `disabled`
-- select: thường sẽ được tùy biến lại bằng cách dùng ul li
-- textarea
-- _sass_: sẽ có 2 đuôi mở rộng của file là `.scss` hoặc .sass( ko dùng dấu {})
-- Cài đặt sass với lệnh `npm install -g sass`
-- Lệnh để chạy sass: `sass path-of-sass-file path-of-css-file --watch`
-- _nested_: lồng nhau
-- .header-item, .header-link, .header-top, .header-bottom
-<!-- .header {
-  code của class .header
-  &-item{
-    code của class .header-item
-  }
-  &-link{
-    code của class .header-link
-  }
-  &-top{
-    code của class .header-top
-  }
-  &-bottom{
-    code của class .header-bottom
-  }
-} -->
+- _select_: thường sẽ được tùy biến lại bằng cách dùng ul li
+- _textarea_: thường dùng cho nội dung nhập nhiều và có xuống hàng, thư viện soạn thảo hay gặp là `ckeditor`
+- _pseudo_

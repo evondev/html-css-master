@@ -1,0 +1,74 @@
+@media screen and (min-width: 768px) {
+  .footer-column:first-child {
+    max-width: 268px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .gem-list {
+    grid-template-rows: 100px 100px 70px;
+  }
+  .popular-list {
+    --columns: 1;
+  }
+  .heading {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .tour-list {
+    --columns: 1;
+    --gap: 20px;
+  }
+  .tour-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .tour-button,
+  .tour-rating {
+    font-size: 12px;
+  }
+  .tour-content {
+    padding: 17px 17px 9px;
+  }
+  .tour-image {
+    height: 211px;
+  }
+  .diamond {
+    padding: 30px 0;
+  }
+  .diamond-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-flow: row;
+    grid-auto-rows: 148px;
+    gap: 16px;
+  }
+  .diamond-item {
+    padding: 8px;
+  }
+  .diamond-all {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 16px;
+    padding: 4px 20px;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+  .footer-top {
+    padding-bottom: 30px;
+  }
+  .footer-bottom,
+  .footer-columns {
+    flex-direction: column;
+  }
+  .footer-columns {
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+  .popular-list,
+  .tour-list {
+    --columns: 2;
+  }
+}

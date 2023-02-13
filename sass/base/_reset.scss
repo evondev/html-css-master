@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+  font: inherit;
+  background-color: transparent;
+  border: none;
+}
+button {
+  cursor: pointer;
+}
