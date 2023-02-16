@@ -14,3 +14,17 @@
     border-radius: $radius;
   }
 }
+@mixin flex(
+  $align-items: flex-start,
+  $justify-content: flex-start,
+  $gap: 0,
+  $flex-direction: row,
+  $flex-wrap: nowrap
+) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+  gap: $gap;
+}

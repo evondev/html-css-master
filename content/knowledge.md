@@ -117,4 +117,21 @@
 - Button có `hover`, `focus` `active` `disabled`
 - _select_: thường sẽ được tùy biến lại bằng cách dùng ul li
 - _textarea_: thường dùng cho nội dung nhập nhiều và có xuống hàng, thư viện soạn thảo hay gặp là `ckeditor`
-- _pseudo_
+- _transition_: làm cho chuyển động trở nên mượt mà hơn, transition: property(all, color, background-color) duration(100ms, 200ms, 2s, 3s) easing(linear, ease, ease-in, ease-in-out, ease-out, cubic bezier)
+- _flex-shrink_: nếu để giá trị là `0` thì độ rộng hoặc chiều cao của nó cố định tại kích thước mình thiết lập và không bị bóp lại
+- _flex-grow_: nếu giá trị là 1 thì cho phép giãn ra
+- _flex-basis_: nó sẽ là độ rộng(flex-direction: row) hoặc là chiều cao(flex-direction: column)
+
+# Những thứ khó nắm vững
+
+- minmax
+- pseudo: `:hover`
+- clamp min max
+- Responsive
+- Container queries
+- Conditional CSS
+
+# Commands
+
+- sass ./sass/main.scss ./css/main.css --watch
+- pug index.pug --pretty --watch
