@@ -119,13 +119,14 @@
 - _textarea_: thường dùng cho nội dung nhập nhiều và có xuống hàng, thư viện soạn thảo hay gặp là `ckeditor`
 - _transition_: làm cho chuyển động trở nên mượt mà hơn, transition: property(all, color, background-color) duration(100ms, 200ms, 2s, 3s) easing(linear, ease, ease-in, ease-in-out, ease-out, cubic bezier)
 - _flex-shrink_: nếu để giá trị là `0` thì độ rộng hoặc chiều cao của nó cố định tại kích thước mình thiết lập và không bị bóp lại
-- _flex-grow_: nếu giá trị là 1 thì cho phép giãn ra
+- _flex-grow_: nếu giá trị là `1` thì cho phép giãn ra
 - _flex-basis_: nó sẽ là độ rộng(flex-direction: row) hoặc là chiều cao(flex-direction: column)
+- _minmax_
+- _auto-fit_ vs _auto-fill_
+- pseudo: `:hover`
 
 # Những thứ khó nắm vững
 
-- minmax
-- pseudo: `:hover`
 - clamp min max
 - Responsive
 - Container queries

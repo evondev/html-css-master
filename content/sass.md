@@ -13,9 +13,9 @@
 } -->
 - _variables_: $primary-color: red;
 - color: $primary-color;
-- _loop_: vòng lặp
 - _@import_
 - _pattern 7-1_
 - _mixins_
+- _loop_
 - _if_
 - _else_

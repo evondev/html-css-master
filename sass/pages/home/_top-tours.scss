@@ -36,7 +36,12 @@
   &-content {
     padding: 20px 20px 14px 20px;
     flex: 1;
-    @include flex(flex-start, flex-start, 0, column);
+    @include flexOptimized(
+      (
+        ai: flex-start,
+        fd: column,
+      )
+    );
     border-radius: 0 0 10px 10px;
   }
 
