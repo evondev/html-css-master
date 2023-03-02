@@ -121,18 +121,37 @@
 - _flex-shrink_: nếu để giá trị là `0` thì độ rộng hoặc chiều cao của nó cố định tại kích thước mình thiết lập và không bị bóp lại
 - _flex-grow_: nếu giá trị là `1` thì cho phép giãn ra
 - _flex-basis_: nó sẽ là độ rộng(flex-direction: row) hoặc là chiều cao(flex-direction: column)
+- _grid-template-areas_
 - _minmax_
-- _auto-fit_ vs _auto-fill_
-- pseudo: `:hover`
-
-# Những thứ khó nắm vững
+- _auto-fill_: nó sẽ cố gắng fill đủ số cột
+- _auto-fit_: nó tương tự auto-fill nhưng nó sẽ lấp đầy khoảng trống còn dư
+- _pseudo_: `:hover` selectors:peseudo -> Search google with keywords: All pseudo class css(W3schools, MDN)
+- Advanced Flexbox case study
+- _before_ & _after_
+- _currentColor_: lấy giá trị theo thuộc tính color
+- _opacity_: độ trong suốt có giá trị từ 0 -> 1, (`0`) -> khi sử dụng opacity thì vẫn hiển thị con trỏ nếu có sử dụng `pointer`, vẫn chiếm diện tích
+- _visibility_: về cơ bản nó giống thằng opacity (`hidden`) -> nhưng không hiển thị con trỏ `pointer`, vẫn chiếm diện tích, lưu ý sử dụng ở phần tử cha thay vì pseudo như before hay after
+- _cursor_: con trỏ, có nhiều loại, pointer, not-allowed, cross...
+- _content_: sử dụng trong pseudo before và after, nội dung có thể có hoặc không tùy vào mục đích
+- _z-index_: sắp xếp thứ tự ưu tiên khi dùng với thuộc tính position hoặc flexbox
+- _white-space_: `nowrap` -> chữ sẽ luôn nằm trên 1 hàng và không bị rớt xuống
+- _pointer-events_: thường dùng khi mà không muốn nhấn vào được
+- _column_: chia cột cho nội dung thường là đoạn text dài
+- _box-shadow_
+- _counter_
+- _text-indent_
+- _overflow_
+- _order_
+- _scroll-snap_
+- _aspect-ratio_
 
 - clamp min max
-- Responsive
 - Container queries
-- Conditional CSS
-
-# Commands
-
-- sass ./sass/main.scss ./css/main.css --watch
-- pug index.pug --pretty --watch
+- background
+- transform
+- animation
+- clip-path
+- table
+- custom checkbox
+- custom radio
+- custom dropdown

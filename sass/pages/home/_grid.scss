@@ -1,0 +1,85 @@
+.grid {
+  &-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  &-item {
+    aspect-ratio: 1/1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    @include flex(center, center);
+  }
+}
+.my-name {
+  text-align: center;
+  position: relative;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  span {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    padding: 5px;
+  }
+}
+.button-rounded {
+  width: 50px;
+  height: 50px;
+  border-radius: 100rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6a5af9;
+  // background-color: rgba(255, 192, 203, 0.3);
+  position: relative;
+  cursor: pointer;
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background-color: currentColor;
+    opacity: 0.1;
+  }
+}
+.bag-icon {
+  display: inline-block;
+  position: relative;
+  color: red;
+  &:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include size(10px);
+    background-color: currentColor;
+    border: 1px solid white;
+    border-radius: 100rem;
+  }
+}
+button.pointer {
+  cursor: not-allowed;
+  span {
+    cursor: pointer;
+    pointer-events: none;
+  }
+}
+.column {
+  column-count: 3;
+  column-gap: 50px;
+  column-width: 200px;
+  column-rule: 5px dotted orange;
+  h3 {
+    column-span: all;
+  }
+}

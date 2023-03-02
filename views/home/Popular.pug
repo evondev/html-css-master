@@ -2,11 +2,12 @@ section.popular
   .container
     h2.heading Popular things to do in Bangkok
     .popular-list
-      +popularItem()
-      +popularItem()
-      +popularItem()
-      +popularItem()
-    //- .layout-auto
+      each val in [1,2,3,4]
+        +popularItem()
+    //-   +popularItem()
+    //-   +popularItem()
+    //-   +popularItem()
+    //- //- .layout-auto
     //-   each val in [1,2,3,4,5,6,7]
     //-     .layout-auto-item= val
     //- .layout-auto-2
