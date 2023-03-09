@@ -652,6 +652,46 @@ button.pointer span {
   content: counter(section) "." counter(subsection) " ";
 }
 
+.item-image {
+  width: clamp(300px, 50%, 500px);
+}
+
+.title-clamp {
+  font-weight: bold;
+  font-size: clamp(25px, 2vw + 16px, 40px);
+}
+
+.card-item-wrapper {
+  container-type: inline-size;
+  container-name: card;
+  max-width: 1000px;
+  border: 1px solid black;
+}
+
+.card-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card-item img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.card-item-item-content {
+  flex: 1;
+}
+@container card (max-width: 730px) {
+  .card-item {
+    flex-direction: column;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-column:first-child {
     max-width: 268px;

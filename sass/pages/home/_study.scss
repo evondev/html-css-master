@@ -125,3 +125,51 @@ button.pointer {
     content: counter(section) "." counter(subsection) " ";
   }
 }
+.item-image {
+  // width: min(100%, 400px);
+  // width: max(50%, 300px);
+  width: clamp(300px, 50%, 500px);
+}
+.title-clamp {
+  // font-size: 40px;
+  // font-weight: bold;
+  // @include maxWidth(1023px) {
+  //   font-size: 30px;
+  // }
+  // @include maxWidth(767px) {
+  //   font-size: 25px;
+  // }
+  font-weight: bold;
+  font-size: clamp(25px, 2vw + 16px, 40px);
+}
+.card-item-wrapper {
+  container-type: inline-size;
+  container-name: card;
+  max-width: 1000px;
+  border: 1px solid black;
+}
+.card-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  &-item-content {
+    flex: 1;
+  }
+  // @media screen and (max-width: 1023px) {
+  //   width: 300px;
+  //   height: 200px;
+  // }
+  @container card (max-width: 730px) {
+    flex-direction: column;
+  }
+}

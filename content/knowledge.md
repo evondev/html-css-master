@@ -145,13 +145,17 @@
 - _order_: dùng để sắp xếp vị trí trong việc dùng Flexbox
 - _counter_: dùng để đánh số thứ tự, thích hợp khi làm mục lục
 - _background_: hình nền, màu nền
-
 - clamp min max
 - Container queries
+
 - transform
 - animation
 - clip-path
+- triangle
+
 - table
+
+- đơn vị `rem` và `em`
 - custom checkbox
 - custom radio
 - custom dropdown
