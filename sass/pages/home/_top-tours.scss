@@ -105,8 +105,20 @@
     border-radius: 4px;
   }
   @media screen and (max-width: 767.98px) {
+    // &-list {
+    //   flex-direction: column;
+    // }
     &-list {
-      flex-direction: column;
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 320px;
+      overflow-x: auto;
+      padding: 0 30px 30px;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+    }
+    &-item {
+      scroll-snap-align: center;
     }
   }
 }

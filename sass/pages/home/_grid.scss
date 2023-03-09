@@ -83,3 +83,45 @@ button.pointer {
     column-span: all;
   }
 }
+.boxed {
+  @include size(100px);
+  background-color: white;
+  box-shadow: 5px 5px red;
+}
+.text-indent {
+  text-indent: 5px;
+}
+.box-overflow {
+  width: 200px;
+  height: 200px;
+  background-color: #6a5af9;
+  color: black;
+  overflow: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.image-ratio {
+  aspect-ratio: 1.34/1;
+  &-wrapper {
+    max-width: 500px;
+  }
+}
+.counter {
+  /* Set "section" to 0 */
+  counter-reset: section;
+
+  h1 {
+    /* Set "subsection" to 0 */
+    counter-reset: subsection;
+  }
+
+  h1::before {
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+  }
+
+  h2::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+  }
+}

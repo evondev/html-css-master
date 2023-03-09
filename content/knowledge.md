@@ -137,17 +137,17 @@
 - _white-space_: `nowrap` -> chữ sẽ luôn nằm trên 1 hàng và không bị rớt xuống
 - _pointer-events_: thường dùng khi mà không muốn nhấn vào được
 - _column_: chia cột cho nội dung thường là đoạn text dài
-- _box-shadow_
-- _counter_
-- _text-indent_
-- _overflow_
-- _order_
-- _scroll-snap_
-- _aspect-ratio_
+- _box-shadow_: tạo bóng đổ cho khối
+- _text-indent_: dịch chuyển chữ vào trong hoặc lùi lại, số dương thì di chuyển qua phải, ngược lại số âm thì di chuyển ngược lại
+- _overflow_: visible, hidden, auto, scroll
+- _scroll-snap_: scroll snap cho phần tử phù hợp giao diện chia cột trên điện thoại mà không cần phải dùng tới Javascript, phần tử cha(scroll-snap-type: x mandatory, scroll-snap-stop: always), phần tử con(scroll-snap-align: start center end)
+- _aspect-ratio_: tỉ lệ khung hình 3/4, 1/1, 16/9
+- _order_: dùng để sắp xếp vị trí trong việc dùng Flexbox
+- _counter_: dùng để đánh số thứ tự, thích hợp khi làm mục lục
+- _background_: hình nền, màu nền
 
 - clamp min max
 - Container queries
-- background
 - transform
 - animation
 - clip-path
