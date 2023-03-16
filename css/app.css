@@ -17,11 +17,11 @@ video {
 }
 body {
   min-height: 100vh;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
-html {
+/* html {
   font-size: 20px;
-}
+} */
 /* card */
 .card-list {
   display: flex;
@@ -150,5 +150,37 @@ html {
   .post {
     flex-direction: column;
     font-size: 16px;
+  }
+}
+/* units */
+html {
+  font-size: 200%;
+}
+.units > div {
+  height: 150px;
+  width: 100%;
+}
+.unit-em {
+  background-color: #20e3b2;
+}
+.unit-rem {
+  background-color: #2cccff;
+}
+.unit-px {
+  background-color: #ff6651;
+}
+@media screen and (min-width: 400px) {
+  .unit-px {
+    opacity: 0.5;
+  }
+}
+@media screen and (min-width: 25em) {
+  .unit-em {
+    opacity: 0.5;
+  }
+}
+@media screen and (min-width: 25rem) {
+  .unit-rem {
+    opacity: 0.5;
   }
 }

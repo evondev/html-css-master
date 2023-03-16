@@ -163,6 +163,7 @@
 - Đơn vị `em` sẽ phụ thuộc vào thuộc tính `font-size` của chính nó hoặc của thằng chứa nó gần nhất
 - Khuyến khích dùng `rem` hoặc `px` cho an toàn
 - Đơn vị `em` hay dùng khi làm việc với độ rộng như max-width, min-width, thông thường hay thấy dùng trong media queries
+- Sử dụng media queries cho em rem và px
 - clip-path
 - custom checkbox
 - custom toggle
