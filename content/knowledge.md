@@ -157,12 +157,17 @@
 - _0_: không cho phép giãn ra cho dù container có dư khoảng trống
 - _1_: cho phép giãn ra khi container khoảng trống
 - khi có thêm `flex-wrap: wrap` vào thì lưu ý khi container không đủ chỗ cho độ rộng của các phần tử cộng lại có gap nữa thì nó sẽ rớt xuống hàng
-- transform
 - đơn vị `rem` và `em`
+- Mặc định font-size của trình hầu hết trình duyệt sẽ là 100% = 16px
+- Đơn vị `rem` sẽ phụ thuộc vào thuộc tính `font-size` của root(html) mà thôi
+- Đơn vị `em` sẽ phụ thuộc vào thuộc tính `font-size` của chính nó hoặc của thằng chứa nó gần nhất
+- Khuyến khích dùng `rem` hoặc `px` cho an toàn
+- Đơn vị `em` hay dùng khi làm việc với độ rộng như max-width, min-width, thông thường hay thấy dùng trong media queries
 - clip-path
 - custom checkbox
 - custom toggle
 - custom radio
 - custom dropdown
 - table
+- transform
 - animation
