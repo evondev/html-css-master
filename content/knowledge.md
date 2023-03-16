@@ -147,15 +147,22 @@
 - _background_: hình nền, màu nền
 - clamp min max
 - Container queries
-
+- flexbox case study
+- _flex-shrink_
+- _0_: không cho phép co lại ở 1 kích thước nào đó nhất định nếu chúng ta thiết lập `width` hoặc `flex-basis` cho nó
+- _1_: cho phép co lại khi container không đủ khoảng trống
+- _flex-basis_:
+- flex-direction là row thì nó nghĩa là độ rộng, ngược lại nếu column thì nó sẽ là chiều cao
+- _flex-grow_:
+- _0_: không cho phép giãn ra cho dù container có dư khoảng trống
+- _1_: cho phép giãn ra khi container khoảng trống
+- khi có thêm `flex-wrap: wrap` vào thì lưu ý khi container không đủ chỗ cho độ rộng của các phần tử cộng lại có gap nữa thì nó sẽ rớt xuống hàng
 - transform
-- animation
-- clip-path
-- triangle
-
-- table
-
 - đơn vị `rem` và `em`
+- clip-path
 - custom checkbox
+- custom toggle
 - custom radio
 - custom dropdown
+- table
+- animation
