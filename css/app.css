@@ -184,3 +184,73 @@ html {
     opacity: 0.5;
   }
 }
+/* custom checkbox */
+body {
+  padding: 20px;
+}
+.forms {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.radio,
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e6e8ec;
+  border-radius: 8px;
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.radio {
+  border-radius: 100rem;
+}
+.radio-label,
+.checkbox-label {
+  cursor: pointer;
+  display: inline-block;
+}
+.radio-input,
+.checkbox-input {
+  display: none;
+}
+.radio-input:checked ~ .radio,
+.checkbox-input:checked ~ .checkbox {
+  /* active*/
+  background-color: #2cccff;
+  border-color: #2cccff;
+  color: white;
+}
+/* toggle */
+.toggle-label {
+  display: inline-block;
+  cursor: pointer;
+}
+.toggle {
+  width: 48px;
+  height: 24px;
+  border-radius: 100rem;
+  background-color: #e7ecf3;
+  padding: 4px 5px;
+  transition: all 0.25s linear;
+}
+.toggle-spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 100rem;
+  background-color: #fff;
+  transition: all 0.25s linear;
+}
+.toggle-input {
+  display: none;
+}
+.toggle-input:checked + .toggle {
+  /* active */
+  background-color: #6a5af9;
+}
+.toggle-input:checked + .toggle .toggle-spinner {
+  /* active */
+  transform: translateX(22px);
+}

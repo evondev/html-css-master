@@ -164,11 +164,15 @@
 - Khuyến khích dùng `rem` hoặc `px` cho an toàn
 - Đơn vị `em` hay dùng khi làm việc với độ rộng như max-width, min-width, thông thường hay thấy dùng trong media queries
 - Sử dụng media queries cho em rem và px
-- clip-path
 - custom checkbox
+- pseudo :checked,
+- combinator +, 1 phần tử đứng liền kề nhau, chạy từ trên xuống dưới chứ không chạy ngược từ dưới lên được
+- combinator ~, đứng cùng cấp là được, ko nhất thiết phải liền kề
 - custom toggle
 - custom radio
 - custom dropdown
 - table
 - transform
 - animation
+- clip-path
+- shape-outside
