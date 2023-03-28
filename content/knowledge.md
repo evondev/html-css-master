@@ -171,8 +171,10 @@
 - custom toggle
 - custom radio
 - custom dropdown
-- table
 - transform
 - animation
 - clip-path
 - shape-outside
+- table
+- form: icon, focus, placeholder-shown
+- hsl color
