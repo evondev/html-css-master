@@ -171,7 +171,28 @@
 - custom toggle
 - custom radio
 - custom dropdown
-- transform
+  **transform**
+- _translate_ (interger, %, em, rem, vw, vh)
+- `translateX(value)`: số dương sẽ di chuyển qua phải, ngược lại qua trái
+- `translateY(value)`: số dương sẽ di chuyển xuống dưới, ngược lại di chuyển lên trên
+- `translate(x, y)`
+- `translate3d(x, y, z)`
+- Nếu sử dụng đơn vị là % thì % đó nghĩa là độ rộng(theo chiều ngang) hoặc chiều cao(chiều dọc) của khối chúng ta đang áp dụng translate
+- _scale_ (interger)
+- `scaleX`
+- `scaleY`
+- `scale(x, y)`
+- `scaleZ`
+- `scale3d(x, y, z)`
+- _rotate_ (deg)
+- `rotateX`
+- `rotateY`
+- `rotate` = `rotateZ`
+- `rotateZ`
+- _skew_ (deg)
+- `skewX`
+- `skewY`
+- `skew`
 - animation
 - clip-path
 - shape-outside

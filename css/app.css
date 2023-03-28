@@ -258,6 +258,7 @@ body {
 }
 .dropdown {
   --radius: 10px;
+  --fake-spacing: 50px;
   display: block;
   width: 200px;
   margin-top: 50px;
@@ -292,17 +293,17 @@ body {
   visibility: hidden;
   transition: all 0.2s linear;
   z-index: 10;
-  margin-top: 20px;
+  transform: translate3d(0, var(--fake-spacing), 0);
 }
 .dropdown-list:before {
   content: "";
-  height: 20px;
+  height: var(--fake-spacing);
   background-color: transparent;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  margin-top: -20px;
+  transform: translate3d(0, -100%, 0);
 }
 .dropdown:hover .dropdown-list {
   opacity: 1;
@@ -326,4 +327,73 @@ body {
 .dropdown-item:last-child {
   border-bottom-left-radius: calc(var(--radius) - 1px);
   border-bottom-right-radius: calc(var(--radius) - 1px);
+}
+/* transform */
+.transform-boxed {
+  width: 100px;
+  height: 100px;
+  background-color: #6a5af9;
+  border-radius: 12px;
+  transform: translateX(25px) translateY(50px);
+  transform: translateX(100%);
+  transform: translate(100%, 0);
+  transform: translateZ(50px);
+  transform: translate3d(100%, 100%, 0);
+}
+.translate-wrapper {
+  width: 100%;
+  height: 500px;
+  background-color: #6a5af9;
+  position: relative;
+}
+.translate-child {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.scale-boxed {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  background-color: #f62682;
+  margin: 0 auto;
+  transform: scale3d(1.1, 1.2, 1);
+}
+.card {
+  width: 400px;
+  height: 250px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 12px;
+  padding: 10px;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.card:hover .card-img {
+  transform: scale(1.5);
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.25s ease-in;
+}
+.rotate-boxed {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  background-color: #2cccff;
+  margin: 0 auto;
+  transform-origin: 0% 50%;
 }
