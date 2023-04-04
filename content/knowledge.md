@@ -193,9 +193,8 @@
 - `skewX`
 - `skewY`
 - `skew`
-- animation
-- clip-path
+- clip-path: polygon
 - shape-outside
 - table
 - form: icon, focus, placeholder-shown
-- hsl color
+- animation
