@@ -1,11 +1,6 @@
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
+@use "./base/reset";
+@use "./base/typography";
 
-@import "./base/reset";
-@import "./base/general";
-@import "./base/typography";
-
-@import "./components/header";
-@import "./components/sidebar";
-
-@import "./pages/home";
+@use "./layout/structure";
+@use "./layout/header";
+@use "./layout/sidebar";

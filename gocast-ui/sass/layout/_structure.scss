@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $bg-color;
+  display: grid;
+  grid-template-columns: 256px minmax(0, 1fr);
+  min-height: 100vh;
+}
