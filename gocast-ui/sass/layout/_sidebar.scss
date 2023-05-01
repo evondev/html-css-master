@@ -1,0 +1,18 @@
+@use "../abstracts" as abst;
+.sidebar {
+  @include abst.bg(white);
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  &-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: abst.$text-gray;
+    font-size: 14px;
+    line-height: 143%;
+    font-weight: 500;
+  }
+}

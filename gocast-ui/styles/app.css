@@ -39,8 +39,13 @@ body {
   line-height: 1;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "IBM Plex Sans", sans-serif;
+  color: hsl(220, 10%, 12%);
 }
 
 .wrapper {
@@ -50,6 +55,25 @@ body {
   display: grid;
   grid-template-columns: 256px minmax(0, 1fr);
   min-height: 100vh;
+}
+
+.sidebar {
+  background-color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.menu-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(215, 19%, 59%);
+  font-size: 14px;
+  line-height: 143%;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=app.css.map */
