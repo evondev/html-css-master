@@ -43,9 +43,15 @@ a {
   text-decoration: none;
 }
 
+ul,
+ol {
+  list-style-type: none;
+}
+
 body {
   font-family: "IBM Plex Sans", sans-serif;
   color: hsl(220, 10%, 12%);
+  font-weight: 400;
 }
 
 .wrapper {
@@ -59,12 +65,33 @@ body {
 
 .sidebar {
   background-color: white;
+  padding: 48px 30px;
+  border-right: 1px solid hsl(208, 26%, 95%);
+}
+
+.logo {
+  display: block;
+  margin-bottom: 44px;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  --gap: 26px;
+}
+.menu:not(:last-child):after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: hsl(213, 33%, 94%);
+  margin-block: var(--gap);
+}
+.menu-heading {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: hsl(215, 19%, 59%);
+  padding-left: 20px;
 }
 .menu-link {
   display: flex;
@@ -74,6 +101,12 @@ body {
   font-size: 14px;
   line-height: 143%;
   font-weight: 500;
+  padding: 8px 30px 8px 20px;
+  border-radius: 12px;
+}
+.menu-link:hover {
+  background: linear-gradient(92.29deg, #415ef4 0.33%, #7141ef 28.14%);
+  color: white;
 }
 
 /*# sourceMappingURL=app.css.map */

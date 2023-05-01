@@ -1,11 +1,31 @@
 @use "../abstracts" as abst;
 .sidebar {
   @include abst.bg(white);
+  padding: 48px 30px;
+  border-right: 1px solid abst.$gray-natural2;
+}
+.logo {
+  display: block;
+  margin-bottom: 44px;
 }
 .menu {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  --gap: 26px;
+  &:not(:last-child):after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: abst.$graye9;
+    margin-block: var(--gap);
+  }
+  &-heading {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: abst.$text-gray;
+    padding-left: 20px;
+  }
   &-link {
     display: flex;
     align-items: center;
@@ -14,5 +34,11 @@
     font-size: 14px;
     line-height: 143%;
     font-weight: 500;
+    padding: 8px 30px 8px 20px;
+    border-radius: 12px;
+    &:hover {
+      background: linear-gradient(92.29deg, #415ef4 0.33%, #7141ef 28.14%);
+      color: white;
+    }
   }
 }

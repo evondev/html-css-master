@@ -2,14 +2,13 @@ aside.sidebar
   a.logo(href="/")
     img(srcSet="./images/logo.png 2x" alt="gocastUI")
   ul.menu
-    each item in ["Home","Trending","Explore Topics","Playlist","Subscriptions"]
-      li.menu-item
-        a.menu-link(href="#")
-          img(src="./images/icons/icon-home.svg", alt="home").menu-icon
-          span.menu-text= item
+    each item in [{text: "Home", icon: "./images/icons/icon-home.svg"},{text: "Trending", icon: "./images/icons/icon-chart.svg"}]
+      +menuItem(item.text, item.icon)
   ul.menu
-    each item in [1,2,3,4,5]
-      li.menu-item
-        a.menu-link(href="#")
-          img(src="./images/icons/icon-home.svg", alt="home").menu-icon
-          span.menu-text Home
+    h3.menu-heading Podcasters
+    each item in ["Dashboard","Episodes","Team","Subscribers"]
+      +menuItem(item)
+  ul.menu
+    h3.menu-heading Community
+    each item in ["Leaderboard"]
+      +menuItem(item)
