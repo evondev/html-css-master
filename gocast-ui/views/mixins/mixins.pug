@@ -3,5 +3,11 @@ mixin menuItem(text, icon = '', href = "#")
     a.menu-link(href= href)
       span.menu-icon
         if icon
-          | !{icon}
+          case icon
+            when 'icon-home'
+              include ../icons/icon-home
+            when 'icon-chart'
+              include ../icons/icon-chart
+            when 'icon-cube'
+              include ../icons/icon-cube
       span.menu-text= text
