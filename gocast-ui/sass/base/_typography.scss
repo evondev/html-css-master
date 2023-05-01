@@ -2,5 +2,9 @@
 body {
   font-family: abst.$font-primary;
   color: abst.$text-black1;
+  font-size: 15px;
   font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

@@ -1,0 +1,50 @@
+@use "../abstracts" as abst;
+.topbar {
+  padding: 24px 56px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    & > * {
+      flex-shrink: 0;
+    }
+  }
+}
+.profile {
+  display: block;
+  @include abst.size(48px);
+  img {
+    border-radius: 100rem;
+    @include abst.cover();
+  }
+}
+.button-upload {
+  height: 48px;
+  padding: 0 16px;
+  color: abst.$gray-neutral1;
+  border-radius: 8px;
+  @include abst.bg(abst.$primary-color);
+  @include abst.fw("semibold");
+  @include abst.flexBox(center, null, 6px);
+}
+.search {
+  padding: 12px 20px;
+  @include abst.rounded("rounded-xl");
+  @include abst.flexBox(center, null, 12px);
+  @include abst.bg(abst.$gray-natural2);
+  flex: 0 1 360px;
+  &-input {
+    @include abst.bg(transparent);
+    flex: 1;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    color: abst.$primary-color;
+    caret-color: abst.$primary-color;
+    @include abst.placeholder(abst.$gray2);
+  }
+}
