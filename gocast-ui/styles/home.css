@@ -4,6 +4,9 @@
   --primary-l: 60%;
 }
 
+.host {
+  padding-bottom: 28px;
+}
 .host-heading {
   font-size: 16px;
   color: hsl(220, 10%, 12%);
@@ -11,19 +14,29 @@
   font-weight: 600;
 }
 .host-list {
+  --gap: 12px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  gap: var(--gap);
 }
 .host-item {
+  --gap: 6px;
+  --avatar-size: 44px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 7px;
+  gap: var(--gap);
+}
+@media screen and (min-width: 768px) {
+  .host-item {
+    --gap: 7px;
+    --avatar-size: 64px;
+  }
 }
 .host-avatar {
-  width: 64px;
-  height: 64px;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
   border-radius: 100rem;
   display: flex;
   align-items: flex-end;

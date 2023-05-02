@@ -1,5 +1,6 @@
 @use "../../abstracts" as abst;
 .host {
+  padding-bottom: 28px;
   &-heading {
     font-size: 16px;
     color: abst.$text-black1;
@@ -7,13 +8,20 @@
     @include abst.fw("semibold");
   }
   &-list {
-    @include abst.flexBox(flex-start, space-between, null, null);
+    --gap: 12px;
+    @include abst.flexBox(flex-start, space-between, var(--gap), null);
   }
   &-item {
-    @include abst.flexBox(center, null, 7px, column);
+    --gap: 6px;
+    --avatar-size: 44px;
+    @include abst.flexBox(center, null, var(--gap), column);
+    @include abst.screenMW(768px) {
+      --gap: 7px;
+      --avatar-size: 64px;
+    }
   }
   &-avatar {
-    @include abst.size(64px);
+    @include abst.size(var(--avatar-size));
     @include abst.rounded("rounded-full");
     @include abst.flexBox(flex-end, center);
     overflow: hidden;

@@ -1,8 +1,11 @@
 .host
   h2.host-heading Popular Hosts
   ul.host-list
-    each user in [{name: "Thomas",color: "hsla(14, 100%, 82%, 1)"},{name: "Darrell",color: "hsla(39, 100%, 75%, 1)"}]
+    - var n = 7;
+    //- each user in [{name: "Thomas",color: "hsla(14, 100%, 82%, 1)"},{name: "Darrell",color: "hsla(39, 100%, 75%, 1)"}]
+    while n > 0
       li.host-item
-        .host-avatar(style= `--color: ${user.color}`)
+        .host-avatar(style="--color: hsla(14, 100%, 82%, 1)")
           img(srcSet="./images/img-host-user.png 2x", alt="thomas")
-        span.host-name= user.name
+        span.host-name Thomas
+      - n--
