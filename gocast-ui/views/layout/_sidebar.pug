@@ -2,8 +2,8 @@ aside.sidebar
   a.logo(href="/")
     img(srcSet="./images/logo.png 2x" alt="gocastUI")
   ul.menu
-    each item in [{text: "Home", icon: "icon-home"},{text: "Trending", icon: "icon-chart"},{text: "Explore Topics", icon: "icon-cube"}]
-      +menuItem(item.text, item.icon)
+    each item in [{text: "Home", icon: "icon-home", href: "/"},{text: "Trending", icon: "icon-chart", href: "/trending.html"},{text: "Explore Topics", icon: "icon-cube"}]
+      +menuItem(item.text, item.icon, item.href)
   ul.menu
     h3.menu-heading Podcasters
     each item in ["Dashboard","Episodes","Team","Subscribers"]

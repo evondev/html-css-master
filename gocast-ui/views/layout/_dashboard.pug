@@ -1,4 +1,4 @@
-include ../mixins/mixins
+include ../mixins/_mixins
 doctype html
 html(lang="en")
   head
@@ -14,7 +14,7 @@ html(lang="en")
       link(rel="stylesheet", href="./styles/app.css")
   body
     .wrapper
-      include ./sidebar
+      include ./_sidebar
       main.main
-        include ./topbar
+        include ./_topbar
         block main
