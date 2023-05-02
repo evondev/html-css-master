@@ -1,3 +1,53 @@
+:root {
+  --primary-h: 248;
+  --primary-s: 57%;
+  --primary-l: 60%;
+}
 
+.host-heading {
+  font-size: 16px;
+  color: hsl(220, 10%, 12%);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.host-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.host-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+}
+.host-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 100rem;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color);
+  box-shadow: 0 0 0 2px white, 0 0 0 3px var(--color);
+}
+.host-avatar img {
+  position: relative;
+  z-index: 2;
+}
+.host-name {
+  font-size: 14px;
+  color: hsl(216, 3%, 38%);
+}
+
+.home-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 60px;
+}
 
 /*# sourceMappingURL=home.css.map */

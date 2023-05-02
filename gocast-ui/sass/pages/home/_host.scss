@@ -1,0 +1,32 @@
+@use "../../abstracts" as abst;
+.host {
+  &-heading {
+    font-size: 16px;
+    color: abst.$text-black1;
+    margin-bottom: 20px;
+    @include abst.fw("semibold");
+  }
+  &-list {
+    @include abst.flexBox(flex-start, space-between, null, null);
+  }
+  &-item {
+    @include abst.flexBox(center, null, 7px, column);
+  }
+  &-avatar {
+    @include abst.size(64px);
+    @include abst.rounded("rounded-full");
+    @include abst.flexBox(flex-end, center);
+    overflow: hidden;
+    position: relative;
+    background-color: var(--color);
+    box-shadow: 0 0 0 2px white, 0 0 0 3px var(--color);
+    img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &-name {
+    font-size: 14px;
+    color: abst.$gray1;
+  }
+}
