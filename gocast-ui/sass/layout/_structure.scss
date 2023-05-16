@@ -10,3 +10,11 @@
 .main-container {
   padding: 37px 56px;
 }
+@include screenMaxWidth(1279.98px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .main-container {
+    padding: 24px;
+  }
+}

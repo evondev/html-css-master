@@ -3,6 +3,9 @@
   @include abst.bg(white);
   padding: 48px 30px;
   border-right: 1px solid abst.$gray-natural2;
+  @include abst.screenMaxWidth(1279.98px) {
+    display: none;
+  }
 }
 .logo {
   display: block;

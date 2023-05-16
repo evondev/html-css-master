@@ -8,10 +8,7 @@
   padding-bottom: 28px;
 }
 .host-heading {
-  font-size: 16px;
-  color: hsl(220, 10%, 12%);
-  margin-bottom: 20px;
-  font-weight: 600;
+  --mb: 20px;
 }
 .host-list {
   --gap: 12px;
@@ -54,7 +51,82 @@
 }
 .host-name {
   font-size: 14px;
-  color: hsl(216, 3%, 38%);
+  color: #5e6064;
+}
+
+.trending {
+  padding-top: 55px;
+  container-type: inline-size;
+  container-name: trending;
+}
+.trending-heading {
+  --mb: 11px;
+}
+.trending-banner {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.trending-content {
+  flex: 0 0 310px;
+}
+.trending-title {
+  font-size: 22px;
+  line-height: 1.45;
+  margin-bottom: 11px;
+}
+.trending-title span {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(92.29deg, #415ef4 0.33%, #7141ef 28.14%);
+}
+.trending-podcast {
+  font-size: 14px;
+  color: #676a6f;
+  margin-bottom: 4px;
+}
+.trending-author {
+  font-size: 14px;
+  color: #232333;
+  margin-bottom: 20px;
+}
+.trending-author span {
+  color: #676a6f;
+}
+.trending-image {
+  position: absolute;
+  right: 0;
+  max-width: 332px;
+  bottom: 0;
+  right: 15px;
+}
+.trending-vector, .trending-circle {
+  position: absolute;
+}
+.trending-vector {
+  right: 5%;
+  top: 5%;
+}
+.trending-circle {
+  right: 45%;
+  bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .trending-circle {
+    right: 15px;
+  }
+}
+@container trending (max-width: 630px) {
+  .trending-image {
+    display: none;
+  }
+  .trending-content {
+    flex: 1;
+  }
 }
 
 .home-wrapper {

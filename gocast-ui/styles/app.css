@@ -56,7 +56,7 @@ ol {
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
-  color: hsl(220, 10%, 12%);
+  color: #1c1e22;
   font-size: 15px;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -64,10 +64,45 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+.heading {
+  --mb: 0;
+  font-size: 16px;
+  color: #1c1e22;
+  font-weight: 600;
+  margin-bottom: var(--mb);
+}
+
+.button {
+  --gap: 10px;
+  --fw: 600;
+  --p: 8px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+  font-weight: var(--fw);
+  padding: var(--p);
+  border-radius: 8px;
+  font-size: 15px;
+}
+.button--primary {
+  color: #fcfcfc;
+  background-color: #6e5fd3;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  background-color: hsl(0, 100%, 100%);
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: 256px minmax(0, 1fr);
   min-height: 100vh;
@@ -77,6 +112,14 @@ body {
   padding: 37px 56px;
 }
 
+@media screen and (max-width: 1279.98px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .main-container {
+    padding: 24px;
+  }
+}
 .topbar {
   padding: 24px 56px;
   background-color: white;
@@ -107,15 +150,8 @@ body {
 
 .button-upload {
   height: 48px;
-  padding: 0 16px;
-  color: hsl(0, 0%, 99%);
-  border-radius: 8px;
-  background-color: hsl(248, 57%, 60%);
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 6px;
+  --gap: 6px;
+  --p: 0 16px;
 }
 
 .search {
@@ -125,7 +161,7 @@ body {
   align-items: center;
   flex-direction: row;
   gap: 12px;
-  background-color: hsl(208, 26%, 95%);
+  background-color: #eff2f6;
   flex: 0 1 360px;
 }
 .search-input {
@@ -134,20 +170,25 @@ body {
   border: none;
   font-weight: 500;
   font-size: 15px;
-  color: hsl(248, 57%, 60%);
-  caret-color: hsl(248, 57%, 60%);
+  color: #6e5fd3;
+  caret-color: #6e5fd3;
 }
 .search-input::-webkit-input-placeholder {
-  color: hsl(235, 7%, 67%);
+  color: #a5a6b1;
 }
 .search-input::-moz-input-placeholder {
-  color: hsl(235, 7%, 67%);
+  color: #a5a6b1;
 }
 
 .sidebar {
   background-color: white;
   padding: 48px 30px;
-  border-right: 1px solid hsl(208, 26%, 95%);
+  border-right: 1px solid #eff2f6;
+}
+@media screen and (max-width: 1279.98px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 .logo {
@@ -165,13 +206,13 @@ body {
   content: "";
   display: block;
   height: 1px;
-  background-color: hsl(213, 33%, 94%);
+  background-color: #ebeff5;
   margin-block: var(--gap);
 }
 .menu-heading {
   font-size: 13px;
   margin-bottom: 10px;
-  color: hsl(215, 19%, 59%);
+  color: #8393aa;
   padding-left: 20px;
 }
 .menu-icon {
@@ -181,7 +222,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: hsl(215, 19%, 59%);
+  color: #8393aa;
   font-size: 14px;
   line-height: 143%;
   font-weight: 500;

@@ -1,0 +1,8 @@
+@use "../abstracts" as abst;
+.heading {
+  --mb: 0;
+  font-size: 16px;
+  color: abst.$text-black1;
+  @include abst.fw("semibold");
+  margin-bottom: var(--mb);
+}

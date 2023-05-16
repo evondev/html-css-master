@@ -2,10 +2,7 @@
 .host {
   padding-bottom: 28px;
   &-heading {
-    font-size: 16px;
-    color: abst.$text-black1;
-    margin-bottom: 20px;
-    @include abst.fw("semibold");
+    --mb: 20px;
   }
   &-list {
     --gap: 12px;
@@ -15,7 +12,7 @@
     --gap: 6px;
     --avatar-size: 44px;
     @include abst.flexBox(center, null, var(--gap), column);
-    @include abst.screenMW(768px) {
+    @include abst.screenMinWidth(768px) {
       --gap: 7px;
       --avatar-size: 64px;
     }
