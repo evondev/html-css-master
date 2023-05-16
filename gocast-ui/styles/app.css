@@ -76,6 +76,7 @@ h6 {
 .heading {
   --mb: 0;
   font-size: 16px;
+  line-height: 1.5;
   color: #1c1e22;
   font-weight: 600;
   margin-bottom: var(--mb);
@@ -97,6 +98,32 @@ h6 {
 .button--primary {
   color: #fcfcfc;
   background-color: #6e5fd3;
+}
+
+.toggle-main {
+  width: 30px;
+  height: 17px;
+  border-radius: 100rem;
+  background-color: #a5a6b1;
+  padding: 1.5px 2px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.toggle input {
+  display: none;
+}
+.toggle input:checked + .toggle-main .toggle-spinner {
+  transform: translateX(12px);
+}
+.toggle input:checked + .toggle-main {
+  background-image: linear-gradient(92.29deg, #415ef4 0.33%, #7141ef 28.14%);
+}
+.toggle-spinner {
+  border-radius: 100rem;
+  background-color: white;
+  width: 14px;
+  aspect-ratio: 1;
+  transition: all 0.2s linear;
 }
 
 .wrapper {

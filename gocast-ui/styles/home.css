@@ -56,6 +56,7 @@
 
 .trending {
   padding-top: 55px;
+  padding-bottom: 36px;
   container-type: inline-size;
   container-name: trending;
 }
@@ -126,6 +127,45 @@
   }
   .trending-content {
     flex: 1;
+  }
+}
+
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  container-type: inline-size;
+  container-name: feedHeader;
+}
+.feed-tab {
+  display: flex;
+  white-space: nowrap;
+}
+.feed-tab-item {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #5e6064;
+  padding: 10px;
+  border-bottom: 1px solid #373a43;
+}
+.feed-tab-item.is-active {
+  color: #6e5fd3;
+  border-bottom-color: currentColor;
+  font-weight: 600;
+}
+.feed-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #5e6064;
+  font-size: 14px;
+  font-weight: 500;
+}
+@container feedHeader (max-width: 470px) {
+  .feed-toggle p {
+    display: none;
   }
 }
 

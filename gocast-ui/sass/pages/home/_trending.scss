@@ -1,6 +1,7 @@
 @use "../../abstracts" as abst;
 .trending {
   padding-top: 55px;
+  padding-bottom: 36px;
   container-type: inline-size;
   container-name: trending;
   &-heading {

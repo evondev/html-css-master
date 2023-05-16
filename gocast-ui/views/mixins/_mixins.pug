@@ -11,3 +11,9 @@ mixin menuItem(text, icon = '', href = "#")
             when 'icon-cube'
               include ../icons/_icon-cube
       span.menu-text= text
+
+mixin toggle()
+  label.toggle
+    input(type="checkbox", name="")
+    .toggle-main
+      .toggle-spinner

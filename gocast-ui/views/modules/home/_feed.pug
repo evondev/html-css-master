@@ -1,0 +1,10 @@
+.feed
+  .feed-header
+    .feed-tab
+      each tab, index in ["My Feed","Popular Feed", "Recent"]
+        .feed-tab-item(class=`${index === 0 ? 'is-active' : ''}`)= tab
+    .feed-toggle
+      +toggle
+      p New Releases &amp; Guests Only
+  .feed-main
+    .feed-item
