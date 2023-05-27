@@ -136,6 +136,7 @@
   align-items: center;
   container-type: inline-size;
   container-name: feedHeader;
+  margin-bottom: 40px;
 }
 .feed-tab {
   display: flex;
@@ -166,6 +167,123 @@
 @container feedHeader (max-width: 470px) {
   .feed-toggle p {
     display: none;
+  }
+}
+.feed-main {
+  container-type: inline-size;
+  container-name: feedMain;
+}
+.feed-item {
+  border: 1px solid #f0f3f6;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.feed-item > * {
+  padding: 20px;
+}
+.feed-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed-item-main {
+  border-top: 1px solid #f0f3f6;
+  border-bottom: 1px solid #f0f3f6;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.feed-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed-item-footer .button {
+  font-size: 14px;
+}
+.feed-item-podcast {
+  color: #a6a7b2;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+.feed-item-heading {
+  line-height: 1.5;
+  font-size: 14px;
+}
+.feed-item-desc {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 16px;
+}
+.feed-image {
+  flex: 0 0 152px;
+  overflow: hidden;
+  aspect-ratio: 1;
+  width: 100%;
+}
+.feed-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.feed-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.feed-author-verify {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+}
+.feed-author-avatar {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  position: relative;
+}
+.feed-author-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100rem;
+}
+.feed-author-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  gap: 4px;
+  color: #a6a7b2;
+}
+.feed-date {
+  color: #a6a7b2;
+  font-weight: 400;
+}
+.feed-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@container feedMain (min-width: 500px) {
+  .feed-item-main {
+    flex-direction: row;
+  }
+  .feed-author-header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+  .feed-author-rating {
+    gap: 10px;
+    margin: 0;
   }
 }
 

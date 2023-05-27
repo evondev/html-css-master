@@ -17,3 +17,43 @@ mixin toggle()
     input(type="checkbox", name="")
     .toggle-main
       .toggle-spinner
+
+mixin buttonPlay(icon = false)
+  button.button.button--primary
+    if icon
+      include ../icons/_icon-play
+    span Play Episode
+
+mixin feedItem
+  .feed-item
+    .feed-item-header
+      .feed-author
+        .feed-author-avatar
+          img(src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80", alt="")
+          span.feed-author-verify
+            include ../icons/_icon-verify
+        .feed-author-content
+          .feed-author-header
+            h4.feed-author-name James Killened
+            .feed-author-rating
+              span rated an episude
+              img(srcset="./images/img-rating.png 2x", alt="")
+          .feed-date Jun 25th
+      span
+        include ../icons/_icon-more
+    .feed-item-main
+      .feed-image
+        img(src="https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80", alt="")
+      .feed-item-content
+        p.feed-item-podcast Perspective Podcast (Ep. 1)
+        h3.feed-item-heading Philosophy vs Religion vs Science: Yahia Amin and Sadman Sadik
+        p.feed-item-desc Play Philosophy vs Religion vs Science: Perspective Podcast (Ep. 1) | Yahia Amin and Sadman Sadik by PERSPECTIVE with Yahia Amin on desktop and mobile. Play over 265 million tracks for...
+    .feed-item-footer
+      .feed-actions
+        button
+          include ../icons/_icon-heart
+        button
+          include ../icons/_icon-star
+        button
+          include ../icons/_icon-playlist
+      +buttonPlay(true)
