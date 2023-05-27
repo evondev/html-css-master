@@ -7,3 +7,20 @@
   @include abst.fw("semibold");
   margin-bottom: var(--mb);
 }
+.widget {
+  margin-bottom: 40px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &-heading {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &-view-all {
+    font-size: 13px;
+    color: abst.$gray2;
+  }
+}

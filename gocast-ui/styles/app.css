@@ -82,6 +82,24 @@ h6 {
   margin-bottom: var(--mb);
 }
 
+.widget {
+  margin-bottom: 40px;
+}
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.widget-heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+.widget-view-all {
+  font-size: 13px;
+  color: #a5a6b1;
+}
+
 .button {
   --gap: 10px;
   --fw: 600;

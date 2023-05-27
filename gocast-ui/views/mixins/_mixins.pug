@@ -18,11 +18,11 @@ mixin toggle()
     .toggle-main
       .toggle-spinner
 
-mixin buttonPlay(icon = false)
+mixin button(icon = false, title = "Play Episode")
   button.button.button--primary
     if icon
       include ../icons/_icon-play
-    span Play Episode
+    span= title
 
 mixin feedItem
   .feed-item
@@ -56,4 +56,41 @@ mixin feedItem
           include ../icons/_icon-star
         button
           include ../icons/_icon-playlist
-      +buttonPlay(true)
+      +button(true)
+
+mixin widgetHeader( title = "", url = "#" )
+  .widget-header
+    h3.widget-heading= title
+    a.widget-view-all(href= url) View all
+
+mixin followItem
+  .follow
+    .follow-user
+      .follow-user-avatar
+        img(src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80", alt="")
+      .follow-user-info
+        h4.follow-user-name Yahia Amin
+        p.follow-user-username @yahiamdamin
+    .follow-action
+      +button(false, "Follow")
+
+mixin listenItem
+  .listen
+    .listen-image
+      img(src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80", alt="")
+    .listen-info
+      h4.listen-title Don't Always Win | LifeSpring
+      .listen-meta
+        .listen-meta-item
+          include ../icons/_icon-play2
+          span 156
+        .listen-meta-item
+          include ../icons/_icon-play2
+          span 156
+
+mixin topicItem
+  .topic
+    img.topic-image(src="https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80")
+    .topic-content
+      h4.topic-title 👫 Society &amp; Culture
+      .topic-podcast 761k podcast
