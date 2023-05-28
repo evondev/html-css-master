@@ -9,7 +9,6 @@
   &-banner {
     padding: 20px;
     border-radius: 10px;
-    background-color: abst.$gray-natural1;
     display: flex;
     align-items: flex-start;
     position: relative;
@@ -28,12 +27,12 @@
   }
   &-podcast {
     font-size: 14px;
-    color: abst.$gray-natural;
+    color: var(--trending-podcast, #676a6f);
     margin-bottom: 4px;
   }
   &-author {
     font-size: 14px;
-    color: abst.$primary-black;
+    color: var(--trending-author, abst.$primary-black);
     margin-bottom: 20px;
     span {
       color: abst.$gray-natural;

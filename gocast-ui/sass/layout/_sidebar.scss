@@ -1,8 +1,6 @@
 @use "../abstracts" as abst;
 .sidebar {
-  @include abst.bg(white);
   padding: 48px 30px;
-  border-right: 1px solid abst.$gray-natural2;
   @include abst.screenMaxWidth(1279.98px) {
     position: fixed;
     top: 0;
@@ -17,6 +15,7 @@
 .logo {
   display: block;
   margin-bottom: 44px;
+  color: var(--logo-color, #11142d);
 }
 .menu {
   display: flex;
@@ -27,7 +26,6 @@
     content: "";
     display: block;
     height: 1px;
-    background-color: abst.$graye9;
     margin-block: var(--gap);
   }
   &-heading {
@@ -43,12 +41,14 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    color: abst.$text-gray;
     font-size: 14px;
     line-height: 143%;
     font-weight: 500;
     padding: 8px 30px 8px 20px;
     border-radius: 12px;
+    [fill^="#E5"] {
+      fill: var(--icon-path, #e5eaf1);
+    }
     &:hover {
       background: linear-gradient(92.29deg, #415ef4 0.33%, #7141ef 28.14%);
       color: white;

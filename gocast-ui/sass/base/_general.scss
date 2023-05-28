@@ -3,7 +3,6 @@
   --mb: 0;
   font-size: 16px;
   line-height: 1.5;
-  color: abst.$text-black1;
   @include abst.fw("semibold");
   margin-bottom: var(--mb);
 }

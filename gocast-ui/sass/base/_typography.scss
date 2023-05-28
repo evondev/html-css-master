@@ -1,7 +1,6 @@
 @use "../abstracts" as abst;
 body {
   font-family: abst.$font-primary;
-  color: abst.$text-black1;
   font-size: 15px;
   font-weight: 400;
   text-rendering: optimizeLegibility;

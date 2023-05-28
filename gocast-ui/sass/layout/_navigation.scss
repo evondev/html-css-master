@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 14px 24px;
-  background-color: white;
+  background-color: var(--navigation-bg, white);
   position: fixed;
   bottom: 0;
   left: 0;

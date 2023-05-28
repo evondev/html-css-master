@@ -24,7 +24,7 @@
     overflow: hidden;
     position: relative;
     background-color: var(--color);
-    box-shadow: 0 0 0 2px white, 0 0 0 3px var(--color);
+    box-shadow: 0 0 0 2px var(--bg-body-color), 0 0 0 3px var(--color);
     img {
       position: relative;
       z-index: 2;
@@ -32,7 +32,6 @@
   }
   &-name {
     font-size: 14px;
-    color: abst.$gray1;
   }
   @media screen and (max-width: 767.98px) {
     padding-bottom: 0;

@@ -17,7 +17,7 @@
 
 aside.sidebar
   a.logo(href="/")
-    img(srcSet="./images/logo.png 2x" alt="gocastUI")
+    include ../icons/_logo
   ul.menu
     each item in menu1
       +menuItem(item.text, item.icon, item.href)
