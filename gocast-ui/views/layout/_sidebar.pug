@@ -1,14 +1,31 @@
+-
+  var menu1 = [
+    {text: "Home", icon: "icon-home", href: "/"},
+    {text: "Trending", icon: "icon-chart", href: "/trending.html"},
+    {text: "Explore Topics", icon: "icon-cube"},
+    {text: "Subscriptions", icon: "icon-subscription"}
+  ];
+  var menu2 = [
+    {text: "Dashboard", icon: "icon-discovery"},
+    {text: "Episodes", icon: "icon-microphone"},
+    {text: "Team", icon: "icon-user"},
+    {text: "Subscribers", icon: "icon-add-user"}
+  ];
+  var menu3 = [
+    {text: "Leaderboard", icon: "icon-medal"},
+  ];
+
 aside.sidebar
   a.logo(href="/")
     img(srcSet="./images/logo.png 2x" alt="gocastUI")
   ul.menu
-    each item in [{text: "Home", icon: "icon-home", href: "/"},{text: "Trending", icon: "icon-chart", href: "/trending.html"},{text: "Explore Topics", icon: "icon-cube"}]
+    each item in menu1
       +menuItem(item.text, item.icon, item.href)
   ul.menu
     h3.menu-heading Podcasters
-    each item in ["Dashboard","Episodes","Team","Subscribers"]
-      +menuItem(item)
+    each item in menu2
+      +menuItem(item.text, item.icon, item.href)
   ul.menu
     h3.menu-heading Community
-    each item in ["Leaderboard"]
-      +menuItem(item)
+    each item in menu3
+      +menuItem(item.text, item.icon, item.href)
