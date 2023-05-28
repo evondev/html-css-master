@@ -5,6 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  &-logo {
+    flex-shrink: 0;
+  }
   &-right {
     display: flex;
     align-items: center;
@@ -42,5 +45,15 @@
     color: abst.$primary-color;
     caret-color: abst.$primary-color;
     @include abst.placeholder(abst.$gray2);
+  }
+}
+@media screen and (max-width: 1279.98px) {
+  .topbar {
+    padding: 20px 24px;
+  }
+  .topbar-action,
+  .search,
+  .button-upload {
+    display: none;
   }
 }

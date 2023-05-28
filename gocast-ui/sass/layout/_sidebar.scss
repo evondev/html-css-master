@@ -4,7 +4,14 @@
   padding: 48px 30px;
   border-right: 1px solid abst.$gray-natural2;
   @include abst.screenMaxWidth(1279.98px) {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    bottom: 0;
+    z-index: 9;
+    transition: transform 0.25s linear;
+    transform: translateX(-100%);
   }
 }
 .logo {

@@ -1,0 +1,26 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  &-item {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-upload {
+    border-radius: 100rem;
+    background-color: var(--primary-color);
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}

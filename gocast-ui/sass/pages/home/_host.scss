@@ -34,4 +34,29 @@
     font-size: 14px;
     color: abst.$gray1;
   }
+  @media screen and (max-width: 767.98px) {
+    padding-bottom: 0;
+  }
+  @container mainContainer (max-width: 420px) {
+    &-heading {
+      --mb: 12px;
+    }
+    &-list {
+      display: grid;
+      grid-auto-columns: 55px;
+      grid-auto-flow: column;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      padding: 10px 0;
+      &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+      }
+      & > * {
+        scroll-snap-align: start;
+      }
+    }
+  }
 }

@@ -2,6 +2,7 @@
   --primary-h: 248;
   --primary-s: 57%;
   --primary-l: 60%;
+  --primary-color: #6e5fd3;
 }
 
 .host {
@@ -53,10 +54,36 @@
   font-size: 14px;
   color: #5e6064;
 }
+@media screen and (max-width: 767.98px) {
+  .host {
+    padding-bottom: 0;
+  }
+}
+@container mainContainer (max-width: 420px) {
+  .host-heading {
+    --mb: 12px;
+  }
+  .host-list {
+    display: grid;
+    grid-auto-columns: 55px;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    padding: 10px 0;
+  }
+  .host-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .host-list > * {
+    scroll-snap-align: start;
+  }
+}
 
 .trending {
-  padding-top: 55px;
-  padding-bottom: 36px;
+  padding: 55px 0 36px;
   container-type: inline-size;
   container-name: trending;
 }
@@ -117,6 +144,9 @@
   bottom: 0;
 }
 @media screen and (max-width: 767px) {
+  .trending {
+    padding: 35px 0 25px;
+  }
   .trending-circle {
     right: 15px;
   }
@@ -412,10 +442,12 @@
   font-size: 13px;
 }
 
-.home-wrapper {
-  display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-  gap: 60px;
+@container mainContainer (min-width: 790px) {
+  .home-wrapper {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 60px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
