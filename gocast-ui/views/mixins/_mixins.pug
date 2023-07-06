@@ -10,6 +10,8 @@ mixin menuItem(text, icon = '', href = "#")
               include ../icons/_icon-chart
             when 'icon-cube'
               include ../icons/_icon-cube
+            when 'icon-play'
+              include ../icons/_icon-play
             when 'icon-discovery'
               include ../icons/_icon-discovery
             when 'icon-microphone'
@@ -106,3 +108,20 @@ mixin topicItem
     .topic-content
       h4.topic-title 👫 Society &amp; Culture
       .topic-podcast 761k podcast
+mixin playlistItem
+  .playlist-item
+    .playlist-image
+      img(src="https://images.unsplash.com/photo-1490598000245-075175152d25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80")
+    .playlist-content
+      .playlist-top
+        h3.playlist-title Business Development Business Development
+        span.playlist-date Created on 1 day ago
+      .playlist-desc UIHUT is a design and coding resources platform for designers, developers, and entrepreneurs.
+      .playlist-bottom
+        .playlist-episodes
+          each val in [1,2,3,4]
+            img.playlist-episode-image.playlist-episode-item(src="https://images.unsplash.com/Ys-DBJeX0nE.JPG?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80")
+          .playlist-episode-number.playlist-episode-item 41+
+        .playlist-likes
+          include ../icons/_icon-heart-fill
+          span.playlist-likes-count 1.5k

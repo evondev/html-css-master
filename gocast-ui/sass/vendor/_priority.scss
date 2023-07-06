@@ -1,0 +1,35 @@
+// inline - id - class - tags
+// 0 1 0
+.header {
+  color: red;
+}
+// 1 0 0
+#header {
+  color: orange;
+}
+// 0 0 1
+header {
+  color: blue;
+}
+// 0 1 1
+header[data-name="link"] {
+}
+// Selector Specificity: id class-attributes tags
+// 0 1 0
+// 0 1 1
+// override
+.content-area .posts-loop .entry-thumbnail img {
+}
+body:not(.single) .posts-loop .entry-thumbnail img {
+}
+// wordpress
+.posts-loop .entry-thumbnail img {
+}
+body .slick-initialized .slick-slide {
+  width: 200px !important;
+}
+.slick-slide {
+}
+.slick-initialized.slider .slick-slide {
+  float: none;
+}

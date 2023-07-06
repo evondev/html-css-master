@@ -1,0 +1,117 @@
+.playlist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 32px;
+  // container-type: inline-size;
+  // container-name: playlist;
+  @container mainContainer (max-width: 520px) {
+    grid-template-columns: 1fr;
+  }
+  &-item {
+    border-radius: 10px;
+    background: var(--playlist-bg, #fff);
+    box-shadow: var(
+      --playlist-shadow,
+      -10px 24px 35px 0px rgba(227, 230, 236, 0.25),
+      -1px -3px 14px 0px rgba(227, 230, 236, 0.2)
+    );
+    display: flex;
+    padding: 14px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    @container mainContainer (max-width: 900px) {
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+  &-image {
+    width: 100%;
+    flex: 0 0 130px;
+    height: 130px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+  }
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  &-title {
+    font-size: 16px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    color: var(--playlist-title, #1b1d21);
+  }
+  &-date,
+  &-desc {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--playlist-date, #5f6164);
+  }
+  &-date {
+    flex-shrink: 0;
+  }
+  &-desc {
+    line-height: 1.5;
+  }
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-episodes {
+    display: flex;
+    align-items: center;
+  }
+  &-episode-image {
+    width: 44px;
+    aspect-ratio: 1;
+    border-radius: 100rem;
+    object-fit: cover;
+    border: 2px solid var(--playlist-episode-border, white);
+  }
+  &-episode-number {
+    width: 44px;
+    aspect-ratio: 1;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--playlist-episode-number, #f0f3f6);
+    color: var(--playlist-title, #5f6164);
+    border: 2px solid var(--playlist-episode-border, white);
+    font-size: 13px;
+  }
+  &-likes {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  &-likes-count {
+    color: var(--playlist-like, #a6a7b2);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  &-episode-item {
+    &:not(:first-child) {
+      margin-left: -20px;
+    }
+  }
+}

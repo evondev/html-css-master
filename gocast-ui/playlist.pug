@@ -1,0 +1,9 @@
+extends ./views/layout/_dashboard
+append stylesheet
+  link(rel="stylesheet", href="./styles/playlist.css")
+block title
+  title GocastUI - Playlist
+block main
+  .playlist
+    each val in [1,2,3,4,5,6]
+      +playlistItem

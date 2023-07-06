@@ -158,6 +158,13 @@ body,
     --logo-color: white;
     --icon-path: #676a6f;
     --navigation-bg: #242731;
+    --playlist-bg: #242731;
+    --playlist-shadow: -10px 24px 35px 0px rgba(8, 8, 9, 0.25),
+      -1px -3px 14px 0px rgba(15, 20, 39, 0.2);
+    --playlist-title: white;
+    --playlist-date: #a6a7b2;
+    --playlist-episode-border: #242731;
+    --playlist-episode-number: #373a43;
   }
 }
 html.dark {
